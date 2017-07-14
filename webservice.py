@@ -64,8 +64,8 @@ def course():
         version = request.args.get('ver')
         model = request.args.get('mod')
         apk = request.args.get('apk')
-        # username = '139074193'
-        # password = '930322'
+        # username = ''
+        # password = ''
     try:
         cookies, userid = Login.login(username, password)
         if cookies is None:
