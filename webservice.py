@@ -32,8 +32,7 @@ def login():
     elif request.method == 'GET':
         username = request.args.get('uid')
         password = request.args.get('pwd')
-        # username = '139074193'
-        # password = '930322'
+        
         if username is None or password is None:
             response = make_response(json.dumps({'success': False, "msg": '登陆失败，用户名或密码为空'}))
             return response
@@ -109,8 +108,8 @@ def task():
         # password = request.args.get('pwd')
         # xnd = request.args.get('xnd')
         # xqd = request.args.get('xqd')
-        username = '139074193'
-        password = '930322'
+        username = ''
+        password = ''
         xnd = '2015-2016'
         xqd = '2'
     try:
@@ -153,8 +152,8 @@ def makeup():
         # password = request.args.get('pwd')
         # xnd = request.args.get('xnd')
         # xqd = request.args.get('xqd')
-        username = '139074193'
-        password = '930322'
+        username = ''
+        password = ''
         xnd = '2014-2015'
         xqd = '1'
     try:
@@ -203,8 +202,8 @@ def score():
         # password = request.args.get('pwd')
         # drop_xn = request.args.get('drop_xn')
         # drop_xq = request.args.get('drop_xq')
-        username = '139074193'
-        userid = '342221199102214012'
+        username = ''
+        userid = ''
         drop_xn = ''
         drop_xq = ''
         drop_type = '全部成绩'
@@ -248,9 +247,9 @@ def avg():
     elif request.method == 'GET':
         # username = request.args.get('uid')
         # userid = request.args.get('tid')
-        # username = '139074193'
-        # userid = '342221199102214012'
-        username = '139074193'
+        # username = ''
+        # userid = ''
+        username = ''
     userid = ''
     drop_xn = ''
     drop_xq = ''
